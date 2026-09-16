@@ -6,7 +6,7 @@ use ArrowSphere\PublicApiClient\AbstractEntity;
 use ArrowSphere\PublicApiClient\Exception\EntityValidationException;
 
 /**
- * Class OrganizationUnit
+ * @deprecated This entity is obsolete. Please use OrganizationUnitClient.
  */
 class OrganizationUnit extends AbstractEntity
 {

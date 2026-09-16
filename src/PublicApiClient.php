@@ -16,6 +16,7 @@ use ArrowSphere\PublicApiClient\Catalog\ProgramClient;
 use ArrowSphere\PublicApiClient\Catalog\ServiceClient;
 use ArrowSphere\PublicApiClient\Consumption\AnalyticsClient;
 use ArrowSphere\PublicApiClient\Consumption\HealthCheckClient;
+use ArrowSphere\PublicApiClient\Contacts\ContactsClient;
 use ArrowSphere\PublicApiClient\Customers\CustomersClient;
 use ArrowSphere\PublicApiClient\General\CheckDomainClient;
 use ArrowSphere\PublicApiClient\General\WhoamiClient;
@@ -23,6 +24,7 @@ use ArrowSphere\PublicApiClient\Licenses\LicensesClient;
 use ArrowSphere\PublicApiClient\Monitoring\MonitoringClient;
 use ArrowSphere\PublicApiClient\Notification\NotificationClient;
 use ArrowSphere\PublicApiClient\Orders\OrdersClient;
+use ArrowSphere\PublicApiClient\OrganizationUnit\OrganizationUnitClient;
 use ArrowSphere\PublicApiClient\Partners\PartnersClient;
 use ArrowSphere\PublicApiClient\Quotes\QuotesClient;
 use ArrowSphere\PublicApiClient\Reports\ReportsClient;
@@ -59,6 +61,9 @@ use RuntimeException;
  * @method AnalyticsClient getAnalyticsClient()
  * @method HealthCheckClient getHealthCheckClient()
  *
+ * Contacts clients
+ * @method ContactsClient getContactsClient()
+ *
  * Customers clients
  * @method CustomersClient getCustomersClient()
  *
@@ -74,6 +79,9 @@ use RuntimeException;
  *
  * Orders clients
  * @method OrdersClient getOrdersClient()
+ *
+ * Organization Unit clients
+ * @method OrganizationUnitClient getOrganizationUnitClient()
  *
  * Partners clients
  * @method PartnersClient getPartnersClient()

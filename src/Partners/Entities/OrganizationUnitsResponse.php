@@ -5,6 +5,9 @@ namespace ArrowSphere\PublicApiClient\Partners\Entities;
 use ArrowSphere\PublicApiClient\AbstractEntity;
 use ArrowSphere\PublicApiClient\Entities\Pagination;
 
+/**
+ * @deprecated This entity is obsolete. Please use OrganizationUnitClient.
+ */
 class OrganizationUnitsResponse extends AbstractEntity
 {
     public const ORGANIZATION_UNITS = 'organizationUnits';

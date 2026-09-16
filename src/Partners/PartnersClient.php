@@ -11,6 +11,9 @@ use ArrowSphere\PublicApiClient\Partners\Entities\OrganizationUnitsResponse;
 use Generator;
 use GuzzleHttp\Exception\GuzzleException;
 
+/**
+ * @deprecated This client is obsolete. Please use OrganizationUnitClient or ContactsClient instead.
+ */
 class PartnersClient extends AbstractClient
 {
     /**
@@ -31,6 +34,8 @@ class PartnersClient extends AbstractClient
      * @throws PublicApiClientException
      * @throws NotFoundException
      * @throws GuzzleException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::getOrganizationUnitsRaw instead.
      */
     public function getOrganizationUnitsRaw(array $parameters = []): string
     {
@@ -51,6 +56,8 @@ class PartnersClient extends AbstractClient
      * @throws GuzzleException
      * @throws NotFoundException
      * @throws PublicApiClientException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::getOrganizationUnits instead.
      */
     public function getOrganizationUnits(array $parameters = []): Generator
     {
@@ -87,6 +94,8 @@ class PartnersClient extends AbstractClient
      * @throws GuzzleException
      * @throws NotFoundException
      * @throws PublicApiClientException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::getOrganizationUnits or OrganizationUnitClient::getOrganizationUnitsRaw instead.
      */
     public function getOrganizationUnitsPage(array $parameters = []): OrganizationUnitsResponse
     {
@@ -111,6 +120,8 @@ class PartnersClient extends AbstractClient
      * @throws NotFoundException
      * @throws PublicApiClientException
      * @throws GuzzleException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::createOrganizationUnit instead.
      */
     public function createOrganizationUnit(OrganizationUnit $organizationUnit, array $parameters = []): OrganizationUnit
     {
@@ -137,6 +148,8 @@ class PartnersClient extends AbstractClient
      * @throws GuzzleException
      * @throws NotFoundException
      * @throws PublicApiClientException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::deleteOrganizationUnit instead.
      */
     public function deleteOrganizationUnit(string $reference, array $parameters = []): string
     {
@@ -154,6 +167,8 @@ class PartnersClient extends AbstractClient
      * @throws GuzzleException
      * @throws NotFoundException
      * @throws PublicApiClientException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::updateOrganizationUnit instead.
      */
     public function updateOrganizationUnit(OrganizationUnit $organizationUnit, array $parameters = []): OrganizationUnit
     {
@@ -181,6 +196,8 @@ class PartnersClient extends AbstractClient
      * @throws GuzzleException
      * @throws NotFoundException
      * @throws PublicApiClientException
+     *
+     * @deprecated This method is obsolete. Please use OrganizationUnitClient::getOrganizationUnit instead.
      */
     public function getOrganizationUnit(string $reference, array $parameters = []): OrganizationUnit
     {
@@ -201,6 +218,8 @@ class PartnersClient extends AbstractClient
      * @throws PublicApiClientException
      * @throws NotFoundException
      * @throws GuzzleException
+     *
+     * @deprecated This method is obsolete. Please use ContactsClient::getContactsRaw instead.
      */
     public function getContactsRaw(array $parameters = []): string
     {

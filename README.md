@@ -88,3 +88,15 @@ echo "Hello " . $whoami->getCompanyName();
 
 - [Support](doc/support.md)
 
+### Partners clients
+
+- [Partners](doc/partners.md)
+
+### Organization Unit clients
+
+- [Organization Unit](doc/organization-unit.md)
+
+### Contacts clients
+
+- [Contacts](doc/contacts.md)
+

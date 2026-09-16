@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added `ContactsClient` under `Contacts` namespace with `getContactsRaw()` and `getVendorContacts()` methods to expose Adobe vendor contact details of an end customer. `getVendorContacts()` throws an `InvalidArgumentException` when the `vendor` parameter is missing or empty
+- Deprecated `PartnersClient::getContactsRaw()` method
+- Added `OrganizationUnitClient` under `OrganizationUnit` namespace with CRUD methods (get/create/update/delete/getOrganizationUnits, plus Raw variants), calling the new Organization Unit API
+- Deprecated `PartnersClient` organization unit methods: getOrganizationUnits(Raw|Page), createOrganizationUnit, getOrganizationUnit, updateOrganizationUnit, deleteOrganizationUnit
+
 ## [0.11.31] - 2026-08-12
 
 - Changed the HTTP invocation with Guzzle to always pass uppercase methods, as lowercase trigger a deprecation error in Guzzle 7.11+
