@@ -23,6 +23,7 @@ use ArrowSphere\PublicApiClient\Licenses\LicensesClient;
 use ArrowSphere\PublicApiClient\Monitoring\MonitoringClient;
 use ArrowSphere\PublicApiClient\Notification\NotificationClient;
 use ArrowSphere\PublicApiClient\Orders\OrdersClient;
+use ArrowSphere\PublicApiClient\OrganizationUnit\OrganizationUnitClient;
 use ArrowSphere\PublicApiClient\Partners\PartnersClient;
 use ArrowSphere\PublicApiClient\Quotes\QuotesClient;
 use ArrowSphere\PublicApiClient\Reports\ReportsClient;
@@ -74,6 +75,9 @@ use RuntimeException;
  *
  * Orders clients
  * @method OrdersClient getOrdersClient()
+ *
+ * Organization Unit clients
+ * @method OrganizationUnitClient getOrganizationUnitClient()
  *
  * Partners clients
  * @method PartnersClient getPartnersClient()
